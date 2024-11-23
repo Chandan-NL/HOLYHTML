@@ -20,3 +20,29 @@ export const HeroData = [
     icon: FaPagelines,
   },
 ];
+
+export const ProjectData = [
+  {
+    id: 1,
+    title: "Project Title 1",
+    desc1:
+      "project desc project descproject descproject descproject descproject descproject desc",
+    desc2:
+      "project desc project descproject descproject descproject descproject descproject desc",
+    link: "Live Preview",
+    img1: "/testimg.webp",
+    img2: "/testimg.webp",
+  },
+
+  {
+    id: 2,
+    title: "Project 2",
+    desc1:
+      "project desc project descproject descproject descproject descproject descproject desc",
+    desc2:
+      "project desc project descproject descproject descproject descproject descproject desc",
+    link: "Live Preview ",
+    img1: "/testimg.webp",
+    img2: "/testimg.webp",
+  },
+];

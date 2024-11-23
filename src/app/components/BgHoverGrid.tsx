@@ -10,10 +10,10 @@ const BgHoverGrid = () => {
                             <path d="M.5 56V.5H72" fill="none"></path>
                         </pattern>
                     </defs>
-                    <rect width="100%" height="100%" stroke-width="0" fill="url(#:Rkqpuja:)"></rect>
+                    <rect width="100%" height="100%" strokeWidth="0" fill="url(#:Rkqpuja:)"></rect>
                     <svg x="50%" y="16" className="overflow-visible">
-                        <rect stroke-width="0" width="73" height="57" x="0" y="56"></rect>
-                        <rect stroke-width="0" width="73" height="57" x="72" y="168"></rect>
+                        <rect strokeWidth="0" width="73" height="57" x="0" y="56"></rect>
+                        <rect strokeWidth="0" width="73" height="57" x="72" y="168"></rect>
                     </svg>
                 </svg>
             </div>
@@ -25,10 +25,10 @@ const BgHoverGrid = () => {
                             <path d="M.5 56V.5H72" fill="none"></path>
                         </pattern>
                     </defs>
-                    <rect width="100%" height="100%" stroke-width="0" fill="url(#:R5kqpuja:)"></rect>
+                    <rect width="100%" height="100%" strokeWidth="0" fill="url(#:R5kqpuja:)"></rect>
                     <svg x="50%" y="16" className="overflow-visible">
-                        <rect stroke-width="0" width="73" height="57" x="0" y="56"></rect>
-                        <rect stroke-width="0" width="73" height="57" x="72" y="168"></rect>
+                        <rect strokeWidth="0" width="73" height="57" x="0" y="56"></rect>
+                        <rect strokeWidth="0" width="73" height="57" x="72" y="168"></rect>
                     </svg>
                 </svg>
             </div>

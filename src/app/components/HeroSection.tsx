@@ -2,7 +2,6 @@ import React from "react";
 import { BackgroundBeamsWithCollision } from "@/app/components/ui/background-beams-with-collision";
 import { div } from "framer-motion/client";
 import { HeroData } from "@/app/data/data"
-import { FaPagelines } from "react-icons/fa";
 
 
 export function HeroSection() {

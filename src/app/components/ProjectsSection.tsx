@@ -24,7 +24,6 @@ const ProjectsSection = () => {
 
 
                 <div className='relative z-10'>
-
                     {ProjectData.map((items) =>
                         <div className='py-6 lg:py-10 flex flex-col lg:flex-row  my-20'>
                             <div className='pr-4'>
@@ -36,7 +35,7 @@ const ProjectsSection = () => {
                                 </div>
                                 <div className='mt-4 h-px w-6 bg-slate-300'></div>
                                 <div className='mt-6'>
-                                    <a href="#" className='inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-slate-900 text-white hover:bg-slate-700'>{items.link}</a>
+                                    <a href="/live" className='inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-slate-900 text-white hover:bg-slate-700'>{items.link}</a>
                                 </div>
                             </div>
                             <div className='flex flex-col sm:flex-row mt-10 lg:mt-0 space-y-6 sm:space-y-0 sm:space-x-6 overflow-x-auto flex-1'>

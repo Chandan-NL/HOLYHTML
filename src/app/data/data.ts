@@ -1,4 +1,5 @@
 import { FaPagelines } from "react-icons/fa";
+import { GoTerminal } from "react-icons/go";
 
 export const HeroData = [
   {
@@ -44,5 +45,44 @@ export const ProjectData = [
     link: "Live Preview ",
     img1: "/testimg.webp",
     img2: "/testimg.webp",
+  },
+];
+
+export const CardData = [
+  {
+    id: 1,
+    icon: GoTerminal,
+    title: "Web App development",
+    desc: "We'll build you a website that's so good, it'll make all the other websites jealous. Trust me, not kidding.",
+  },
+  {
+    id: 2,
+    icon: GoTerminal,
+    title: "Web Design",
+    desc: "Your website will be so beautiful, you'll want to frame it and hang it on your wall (but please don't).",
+  },
+  {
+    id: 3,
+    icon: GoTerminal,
+    title: "Deployments and Hosting",
+    desc: "Get your website out there in the world, where it belongs, with our lightning-fast deployment services.",
+  },
+  {
+    id: 4,
+    icon: GoTerminal,
+    title: "Maintenence",
+    desc: "We keep your website running like a well-oiled machine. From optimizing performance to ensuring security, we've got you covered.",
+  },
+  {
+    id: 5,
+    icon: GoTerminal,
+    title: "Full-Stack Development",
+    desc: "Take your website to the next level with our full-stack development services. We've got all the skills to make your vision a reality.",
+  },
+  {
+    id: 6,
+    icon: GoTerminal,
+    title: "And everything else",
+    desc: "Ecommerce, Landing pages, Back-end heavy, Dashboards. You name it, we've done it AND we'll do it for you.",
   },
 ];

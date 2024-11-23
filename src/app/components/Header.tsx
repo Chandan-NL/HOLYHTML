@@ -17,7 +17,9 @@ const Header = () => {
                         <a className="mr-5 hover:text-gray-900">Third Link</a>
                         <a className="mr-5 hover:text-gray-900">Fourth Link</a>
                     </nav>
-                    <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Contact
+
+                    <button className="px-8 py-2 rounded-full bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500 text-white focus:ring-2 focus:ring-blue-400 hover:shadow-xl transition duration-200">
+                        Contact Us
                     </button>
                 </div>
             </header>

@@ -25,14 +25,15 @@ export const HeroData = [
 export const ProjectData = [
   {
     id: 1,
-    title: "Project Title 1",
+    title: "Chandan NL | Portfolio",
     desc1:
       "project desc project descproject descproject descproject descproject descproject desc",
     desc2:
       "project desc project descproject descproject descproject descproject descproject desc",
-    link: "Live Preview",
-    img1: "/testimg.webp",
-    img2: "/testimg.webp",
+    linkTitle: "Live Preview",
+    link: "https://chandan-nl.github.io/portfolio/",
+    img1: "./project1.png",
+    img2: "./project2.png",
   },
 
   {
@@ -42,9 +43,10 @@ export const ProjectData = [
       "project desc project descproject descproject descproject descproject descproject desc",
     desc2:
       "project desc project descproject descproject descproject descproject descproject desc",
-    link: "Live Preview ",
-    img1: "/testimg.webp",
-    img2: "/testimg.webp",
+    linkTitle: "Live Preview ",
+    link: "/test",
+    img1: "./404.png",
+    img2: "./404.png",
   },
 ];
 

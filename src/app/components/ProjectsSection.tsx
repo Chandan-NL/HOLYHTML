@@ -25,7 +25,7 @@ const ProjectsSection = () => {
 
                 <div className='relative z-10'>
                     {ProjectData.map((items) =>
-                        <div className='py-6 lg:py-10 flex flex-col lg:flex-row  my-20'>
+                        <div key={items.id} className='py-6 lg:py-10 flex flex-col lg:flex-row  my-20'>
                             <div className='pr-4'>
                                 <h1 className='font-bold text-2xl text-slate-800'>{items.title}</h1>
                                 <div className='text-sm text-slate-600 max-w-xs mt-4 leading-6'>
@@ -35,7 +35,7 @@ const ProjectsSection = () => {
                                 </div>
                                 <div className='mt-4 h-px w-6 bg-slate-300'></div>
                                 <div className='mt-6'>
-                                    <a href="/live" className='inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-slate-900 text-white hover:bg-slate-700'>{items.link}</a>
+                                    <a href={items.link} target='_blank' className='inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-slate-900 text-white hover:bg-slate-700'>{items.linkTitle}</a>
                                 </div>
                             </div>
                             <div className='flex flex-col sm:flex-row mt-10 lg:mt-0 space-y-6 sm:space-y-0 sm:space-x-6 overflow-x-auto flex-1'>

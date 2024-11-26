@@ -7,11 +7,11 @@ import { HeroData } from "@/app/data/data"
 export function HeroSection() {
     return (
         <>
-            <section id="home">
+            <section>
                 <BackgroundBeamsWithCollision>
                     <div>
-                        <h2 className="text-4xl md:text-7xl font-bold mb-11 relative text-center text-zinc-700">
-                            Build Web App that&nbsp;
+                        <h2 className="text-4xl md:text-7xl mt-10 font-bold mb-11 relative text-center text-zinc-700">
+                            Build Web App & Websites that&nbsp;
                             <div className="relative mx-auto inline-block w-max [filter:drop-shadow(0px_1px_3px_rgba(27,_37,_80,_0.14))]">
                                 <div className="absolute left-0 top-[1px] bg-clip-text bg-no-repeat text-transparent bg-gradient-to-r py-4 from-purple-500 via-violet-500 to-pink-500 [text-shadow:0_0_rgba(0,0,0,0.1)]">
                                     <span className="">Makes Sense.</span>
@@ -28,7 +28,7 @@ export function HeroSection() {
 
                         <div className=" w-full relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto mb-16 px-2 md:px-8">
                             {HeroData.map((item) =>
-                                <div className="grid-card flex flex-row space-x-4 items-start">
+                                <div key={item.id} className="grid-card flex flex-row space-x-4 items-start">
                                     <div className="icons-container rounded-xl p-2 border-teal-500 border-2 shadow-sm bg-white"> {React.createElement(item.icon)} </div>
                                     <div className="content-container">
                                         <h2 className="font-bold text-sm text-zinc-700 tracking-wide mb-3">{item.title}</h2>
@@ -51,6 +51,5 @@ export function HeroSection() {
                 </BackgroundBeamsWithCollision>
             </section>
         </>
-
     );
 }

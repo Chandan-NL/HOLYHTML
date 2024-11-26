@@ -4,7 +4,6 @@ import { BackgroundBeams } from './ui/background-beams'
 
 
 const NewSection = () => {
-    const [loading, setLoading] = useState(false);
     return (
         <>
             <section>
@@ -20,7 +19,7 @@ const NewSection = () => {
                             <div className='flex justify-center'>
                                 <a href="#" className="flex justify-center rounded-lg text-sm font-bold py-3 px-4 bg-white/0 text-white ring-1 ring-slate-100 hover:bg-white/25 hover:ring-slate-900/15 mx-4">Contact Us</a>
 
-                                <a onClick={() => setLoading(true)} className="shadow-[0_4px_14px_0_rgb(0,118,255,39%)] hover:shadow-[0_6px_20px_rgba(0,118,255,23%)] hover:bg-[rgba(0,118,255,0.9)] px-8 py-2 bg-[#0070f3] rounded-md text-white font-light transition duration-200 ease-linear cursor-pointer">
+                                <a className="shadow-[0_4px_14px_0_rgb(0,118,255,39%)] hover:shadow-[0_6px_20px_rgba(0,118,255,23%)] hover:bg-[rgba(0,118,255,0.9)] px-8 py-2 bg-[#0070f3] rounded-md text-white font-light transition duration-200 ease-linear cursor-pointer">
                                     <div className='flex gap-2'>
                                         <span>Our Approch</span>
                                     </div>

@@ -31,28 +31,28 @@ export const HeroData = [
 export const ProjectData = [
   {
     id: 1,
-    title: "Project 1",
+    title: "Chandan N L | Portfolio",
     desc1:
-      "project desc project descproject descproject descproject descproject descproject desc",
+      "Create a stunning personal portfolio to showcase your skills, completed projects, and freelancing expertise.",
     desc2:
-      "project desc project descproject descproject descproject descproject descproject desc",
+      "Attract clients and employers with an impressive design tailored for career growth and online presence.",
     linkTitle: "Live Preview",
     link: "https://chandan-nl.github.io/portfolio/",
-    img1: "./404.png",
-    img2: "./404.png",
+    img1: "./project1.png",
+    img2: "./project2.png",
   },
 
   {
     id: 2,
-    title: "Project 2",
+    title: "Coming Soon 🔜",
     desc1:
-      "project desc project descproject descproject descproject descproject descproject desc",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque facilisis sapien at lorem tincidunt,",
     desc2:
-      "project desc project descproject descproject descproject descproject descproject desc",
+      "vel accumsan mauris convallis. Sed euismod, sapien id vehicula, lacus sapien efficitur sapien.",
     linkTitle: "Live Preview ",
     link: "/test",
-    img1: "./404.png",
-    img2: "./404.png",
+    img1: "./st.jpg",
+    img2: "./st.jpg",
   },
 ];
 
@@ -91,6 +91,6 @@ export const CardData = [
     id: 6,
     icon: Everything,
     title: "And everything else",
-    desc: "Ecommerce, Landing pages, Back-end heavy, Dashboards. You name it, we've done it AND we'll do it for you.",
+    desc: "Landing pages, Back-end heavy, Dashboards. You name it, we've done it AND we'll do it for you.",
   },
 ];

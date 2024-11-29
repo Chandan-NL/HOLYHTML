@@ -28,7 +28,7 @@ const ServiceSection = () => {
 
                 <ul role="list" className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 text-sm sm:mt-20 sm:grid-cols-2 md:gap-y-10 lg:max-w-none lg:grid-cols-3">
                     {CardData.map((items) =>
-                        <li className="group rounded-2xl border border-gray-200 p-8 relative">
+                        <li key={items.id} className="group rounded-2xl border border-gray-200 p-8 relative">
                             <BgHoverGrid />
                             <div className="relative z-10">
                                 <span>

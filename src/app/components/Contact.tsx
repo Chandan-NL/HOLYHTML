@@ -11,7 +11,7 @@ const Contact = () => {
 
                     <div className='lg:grid lg:grid-cols-1 gap-10 p-2 md:p-8 relative z-20'>
                         <div className='text-center lg:text-left'>
-                            <h2 className='text-2xl md:text-4xl font-bold my-4  text-center'> Let's build your website today!</h2>
+                            <h2 className='text-2xl md:text-4xl font-bold my-10  text-center'> Let's build your website today!</h2>
                             <div className='flex items-center justify-center text-center my-8'>
                                 <p className=' text-base text-gray-300 md:text-lg tracking-wide font-light max-w-lg mx-auto"'>Contact us, and we'll respond as soon as possible.</p>
                             </div>

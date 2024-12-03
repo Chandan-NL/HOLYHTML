@@ -16,10 +16,9 @@ const Contact = () => {
                                 <p className=' text-base text-gray-300 md:text-lg tracking-wide font-light max-w-lg mx-auto"'>Contact us, and we'll respond as soon as possible.</p>
                             </div>
                             <div className='flex justify-center'>
-                                <a href="#" className="flex justify-center rounded-lg text-sm font-bold py-3 px-4 bg-white/0 text-white ring-1 ring-slate-100 hover:bg-white/25 hover:ring-slate-900/15 mx-4">Contact Us</a>
+                                <a href="mailto:Chandan_NL@outlook.com" className="flex justify-center rounded-lg text-sm font-bold py-3 px-4 bg-white/0 text-white ring-1 ring-slate-100 hover:bg-white/25 hover:ring-slate-900/15 mx-4">Contact Us</a>
 
-                                <a className=" hover:shadow-[0_6px_20px_rgba(0,118,255,23%)] hover:bg-[#21e065] px-5 py-2 bg-[#21e065] rounded-md text-white font-light transition duration-200 ease-linear cursor-pointer">
-
+                                <a href='https://wa.me/6360443469?text=Hello,%20are%20you%20interested%20in%20our%20services!' target='_blank' className=" hover:shadow-[0_6px_20px_rgba(0,118,255,23%)] hover:bg-[#21e065] px-5 py-2 bg-[#21e065] rounded-md text-white font-light transition duration-200 ease-linear cursor-pointer">
                                     <div className='flex gap-2'>
                                         <span><SiWhatsapp size={24} /></span>
                                         <span>WhatsApp</span>

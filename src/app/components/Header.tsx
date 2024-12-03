@@ -18,9 +18,9 @@ const Header = () => {
                         <a href='/a' className="mr-5 hover:text-gray-900">Approch</a> */}
                     </nav>
 
-                    <button className="px-8 py-2 rounded-full bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500 text-white focus:ring-2 focus:ring-blue-400 hover:shadow-xl transition duration-200">
+                    <a href='mailto:Chandan_NL@outlook.com' className="px-8 py-2 rounded-full bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500 text-white focus:ring-2 focus:ring-blue-400 hover:shadow-xl transition duration-200">
                         Contact
-                    </button>
+                    </a>
                 </div>
             </header>
         </>

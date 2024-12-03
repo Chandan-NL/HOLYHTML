@@ -51,8 +51,8 @@ export const ProjectData = [
       "vel accumsan mauris convallis. Sed euismod, sapien id vehicula, lacus sapien efficitur sapien.",
     linkTitle: "Live Preview ",
     link: "/test",
-    img1: "./st.jpg",
-    img2: "./st.jpg",
+    img1: "./404.png",
+    img2: "./404.png",
   },
 ];
 
@@ -92,5 +92,40 @@ export const CardData = [
     icon: Everything,
     title: "And everything else",
     desc: "Landing pages, Back-end heavy, Dashboards. You name it, we've done it AND we'll do it for you.",
+  },
+];
+
+export const OurOffer = [
+  {
+    id: 1,
+    title: "Top Notch Design",
+  },
+  {
+    id: 2,
+    title: "Rappid Development",
+  },
+  {
+    id: 3,
+    title: "Performance Optimized",
+  },
+  {
+    id: 4,
+    title: "Responsive Design",
+  },
+  {
+    id: 5,
+    title: "Search Engine Optimized",
+  },
+  {
+    id: 6,
+    title: "Contact Forms",
+  },
+  {
+    id: 7,
+    title: "Revisions",
+  },
+  {
+    id: 8,
+    title: "Built by experts",
   },
 ];

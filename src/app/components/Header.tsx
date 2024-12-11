@@ -1,30 +1,129 @@
-import React from 'react'
+"use client"
+import React from "react";
+import {
+    Navbar,
+    NavbarBrand,
+    NavbarContent,
+    NavbarItem,
+    NavbarMenuToggle,
+    NavbarMenu,
+    NavbarMenuItem,
+    Link,
+    Button,
+} from "@nextui-org/react";
+import Image from "next/image";
+import logo from "@/app/assets/holyhtml-logo.png"
+import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, useDisclosure } from "@nextui-org/modal";
+import Form from "./Form";
 
-const Header = () => {
+
+export const AcmeLogo = () => {
     return (
-        <>
-            <header id="home" className="text-gray-600 body-font">
-                <div className="container mx-auto flex flex-wrap p-8 max-w-[83rem] flex-col md:flex-row items-center">
-                    <a href='/' className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-                        {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-                        </svg> */}
-                        <span className="ml-3 text-xl"> HOLYHTML </span>
-                    </a>
-                    <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-                        {/* <a href='/a' className="mr-5 hover:text-gray-900">Home</a>
-                        <a href='#projects' className="mr-5 hover:text-gray-900">Work</a>
-                        <a href='#service' className="mr-5 hover:text-gray-900">Service</a>
-                        <a href='/a' className="mr-5 hover:text-gray-900">Approch</a> */}
-                    </nav>
+        <Image src={logo} alt="logo" height={150} width={150} />
+    );
+};
 
-                    <a href='mailto:Chandan_NL@outlook.com' className="px-8 py-2 rounded-full bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500 text-white focus:ring-2 focus:ring-blue-400 hover:shadow-xl transition duration-200">
-                        Contact
-                    </a>
-                </div>
-            </header>
+export default function Header() {
+    const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+    const { isOpen, onOpen, onOpenChange } = useDisclosure();
+
+
+    const menuItems = [
+        {
+            id: 1,
+            title: "Work",
+            link: "#projects"
+        },
+        {
+            id: 1,
+            title: "Service",
+            link: "#service"
+        },
+        {
+            id: 1,
+            title: "Contact",
+            link: "#contact"
+        }
+    ];
+
+    return (
+
+        <>
+            <Navbar onMenuOpenChange={setIsMenuOpen}>
+                <NavbarContent justify="start">
+                    <NavbarMenuToggle
+                        aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+                        className="sm:hidden"
+                    />
+                    <NavbarBrand>
+                        <AcmeLogo />
+                    </NavbarBrand>
+                </NavbarContent>
+
+                <NavbarContent className="hidden sm:flex gap-4" justify="center">
+                    <NavbarItem>
+                        <Link color="foreground" href="#projects">
+                            Work
+                        </Link>
+                    </NavbarItem>
+                    <NavbarItem >
+                        <Link color="foreground" href="#service">
+                            Services
+                        </Link>
+                    </NavbarItem>
+                    <NavbarItem>
+                        <Link color="foreground" href="#contact">
+                            Contact
+                        </Link>
+                    </NavbarItem>
+                </NavbarContent>
+
+                <NavbarContent justify="end">
+
+                    <NavbarItem>
+                        <Button onPress={onOpen} as={Link} className="bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500 text-white focus:ring-2 focus:ring-blue-400 hover:shadow-xl transition duration-200" >
+                            Contact Us
+                        </Button>
+                    </NavbarItem>
+
+                </NavbarContent>
+
+                <NavbarMenu>
+                    {menuItems.map((item, index) => (
+                        <NavbarMenuItem key={`${item}-${index}`}>
+                            <Link
+                                className="w-full"
+                                color={
+                                    "foreground"
+                                }
+                                href={item.link}
+                                size="lg"
+                            >
+                                {item.title}
+                            </Link>
+                        </NavbarMenuItem>
+                    ))}
+                </NavbarMenu>
+            </Navbar>
+
+
+            <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
+                <ModalContent>
+                    {(onClose) => (
+                        <>
+                            <ModalHeader className="flex flex-col gap-1">Contact Us 📧</ModalHeader>
+                            <ModalBody>
+                                <Form />
+                            </ModalBody>
+                            <ModalFooter>
+                                {/*  */}
+                            </ModalFooter>
+                        </>
+                    )}
+                </ModalContent>
+            </Modal>
+
         </>
-    )
+    );
 }
 
-export default Header

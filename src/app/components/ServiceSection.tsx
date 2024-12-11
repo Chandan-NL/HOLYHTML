@@ -1,12 +1,10 @@
-import { path } from 'framer-motion/client'
 import React from 'react'
 import BgHoverGrid from './BgHoverGrid'
 import { CardData } from "@/app/data/data"
 
+
 const ServiceSection = () => {
     return (
-
-
         <>
             <section id='service' className=' max-w-7xl mx-auto  antialiased py-10 md:py-20'>
                 <h2 className='font-bold text-4xl text-center text-slate-700 capitalize'>We handle just about&nbsp;
@@ -28,6 +26,7 @@ const ServiceSection = () => {
 
                 <ul role="list" className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 text-sm sm:mt-20 sm:grid-cols-2 md:gap-y-10 lg:max-w-none lg:grid-cols-3">
                     {CardData.map((items) =>
+
                         <li key={items.id} className="group rounded-2xl border border-gray-200 p-8 relative">
                             <BgHoverGrid />
                             <div className="relative z-10">

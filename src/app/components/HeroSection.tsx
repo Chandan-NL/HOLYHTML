@@ -1,5 +1,7 @@
 import React from "react";
 import { HeroData } from "@/app/data/data"
+import { Card, CardHeader, CardBody, CardFooter } from "@nextui-org/card";
+
 
 
 export function HeroSection() {
@@ -25,13 +27,17 @@ export function HeroSection() {
 
                     <div className=" w-full relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto mb-16 px-2 md:px-8">
                         {HeroData.map((item) =>
-                            <div key={item.id} className="grid-card flex flex-row space-x-4 items-start">
-                                <div className="icons-container rounded-xl p-2 border-teal-500 border-2 shadow-sm bg-white"> {React.createElement(item.icon)} </div>
-                                <div className="content-container">
-                                    <h2 className="font-bold text-sm text-zinc-700 tracking-wide mb-3">{item.title}</h2>
-                                    <h4 className="text-zinc-700 text-sm leading-6 font-normal"> {item.dec} </h4>
-                                </div>
-                            </div>
+                            <Card>
+                                <CardBody>
+                                    <div key={item.id} className="grid-card flex flex-row space-x-4 items-start">
+                                        <div className="icons-container rounded-xl p-2 border-teal-500 border-2 shadow-sm bg-white"> {React.createElement(item.icon)} </div>
+                                        <div className="content-container">
+                                            <h2 className="font-bold text-sm text-zinc-700 tracking-wide mb-3">{item.title}</h2>
+                                            <h4 className="text-zinc-700 text-sm leading-6 font-normal"> {item.dec} </h4>
+                                        </div>
+                                    </div>
+                                </CardBody>
+                            </Card>
                         )}
                     </div>
 

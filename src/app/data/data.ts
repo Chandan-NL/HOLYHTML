@@ -5,7 +5,7 @@ import DeploymentIcon from "../Icons/DeploymentIcon";
 import Everything from "../Icons/Everything";
 import FullStackIcon from "../Icons/FullStackIcon";
 import MaintenenceIcon from "../Icons/MaintenenceIcon";
-import WebDesignIcon from "../Icons/WebDevIcon";
+import WebDesignIcon from "../Icons/WebDesignIcon";
 
 export const HeroData = [
   {

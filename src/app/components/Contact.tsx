@@ -1,8 +1,15 @@
+"use client"
 import React from 'react'
 import { BackgroundBeams } from './ui/background-beams'
 import { SiWhatsapp } from "react-icons/si";
+import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, useDisclosure } from "@nextui-org/modal";
+import { Button } from '@nextui-org/react';
+import Form from './Form';
+
 
 const Contact = () => {
+    const { isOpen, onOpen, onOpenChange } = useDisclosure();
+
     return (
         <>
             <section id="contact">
@@ -11,14 +18,14 @@ const Contact = () => {
 
                     <div className='lg:grid lg:grid-cols-1 gap-10 p-2 md:p-8 relative z-20'>
                         <div className='text-center lg:text-left'>
-                            <h2 className='text-2xl md:text-4xl font-bold my-10  text-center'> Let's build your website today!</h2>
+                            <h2 className='text-2xl md:text-4xl font-bold my-10  text-center'> Let&apos;s build your website today!</h2>
                             <div className='flex items-center justify-center text-center my-8'>
-                                <p className=' text-base text-gray-300 md:text-lg tracking-wide font-light max-w-lg mx-auto"'>Contact us, and we'll respond as soon as possible.</p>
+                                <p className=' text-base text-gray-300 md:text-lg tracking-wide font-light max-w-lg mx-auto"'>Contact us, and we&apos;ll respond as soon as possible.</p>
                             </div>
                             <div className='flex justify-center'>
-                                <a href="mailto:Chandan_NL@outlook.com" className="flex justify-center rounded-lg text-sm font-bold py-3 px-4 bg-white/0 text-white ring-1 ring-slate-100 hover:bg-white/25 hover:ring-slate-900/15 mx-4">Contact Us</a>
+                                <Button onPress={onOpen} className="flex justify-center rounded-lg text-sm font-bold py-3 px-4 bg-white/0 text-white ring-1 ring-slate-100 hover:bg-white/25 hover:ring-slate-900/15 mx-4">Contact Us</Button>
 
-                                <a href='https://wa.me/6360443469?text=Hello,%20are%20you%20interested%20in%20our%20services!' target='_blank' className=" hover:shadow-[0_6px_20px_rgba(0,118,255,23%)] hover:bg-[#21e065] px-5 py-2 bg-[#21e065] rounded-md text-white font-light transition duration-200 ease-linear cursor-pointer">
+                                <a href='https://wa.me/6360443469?text=Hello,%20I%20am%20interested%20in%20your%20services!' target='_blank' className=" hover:shadow-[0_6px_20px_rgba(0,118,255,23%)] hover:bg-[#21e065] px-5 py-2 bg-[#21e065] rounded-md text-white font-light transition duration-200 ease-linear cursor-pointer">
                                     <div className='flex gap-2'>
                                         <span><SiWhatsapp size={24} /></span>
                                         <span>WhatsApp</span>
@@ -32,6 +39,23 @@ const Contact = () => {
                     <BackgroundBeams />
                 </div>
             </section>
+
+
+            <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
+                <ModalContent>
+                    {(onClose) => (
+                        <>
+                            <ModalHeader className="flex flex-col gap-1">Contact Us 📧</ModalHeader>
+                            <ModalBody>
+                                <Form />
+                            </ModalBody>
+                            <ModalFooter>
+                                {/*  */}
+                            </ModalFooter>
+                        </>
+                    )}
+                </ModalContent>
+            </Modal>
         </>
     )
 }

@@ -1,7 +1,7 @@
 "use client"
-import React, { useState } from 'react'
+import React from 'react'
 import { BackgroundBeams } from './ui/background-beams'
-import { OurApproch } from "./OurApproch"
+import OurModel from './OurModel'
 
 
 const NewSection = () => {
@@ -18,7 +18,7 @@ const NewSection = () => {
                                 <p className=' text-base text-gray-300 md:text-lg tracking-wide font-light max-w-lg mx-auto"'>Road to freedom starts from here.</p>
                             </div>
                             <div className='flex justify-center'>
-                                <OurApproch />
+                                <OurModel />
                             </div>
                         </div>
                     </div>

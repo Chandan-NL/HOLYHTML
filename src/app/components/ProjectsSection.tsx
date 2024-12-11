@@ -1,10 +1,11 @@
 import React from 'react'
 import { ProjectData } from "@/app/data/data"
 
+
 const ProjectsSection = () => {
     return (
         <>
-            <section id='projects' className=' max-w-6xl mx-auto antialiased'>
+            <section id='projects' className=' max-w-6xl mx-auto antialiased py-10 md:py-20'>
                 <h2 className='font-bold text-4xl text-center text-slate-700 capitalize'>Recent&nbsp;
 
                     <div className="relative mx-auto inline-block w-max [filter:drop-shadow(0px_1px_3px_rgba(27,_37,_80,_0.14))]">
@@ -39,6 +40,7 @@ const ProjectsSection = () => {
                                 <div className='relative w-full h-52 sm:h-72 lg:h-[79%]  sm:w-[50%] lg:w-[85%] rounded-xl border border-gray-100'>
                                     <img src={items.img1} alt="img" loading='lazy' decoding='async' className='transition duration-300 blur-0 object-cover object-left-top rounded-xl ' />
                                 </div>
+
                             </div>
                             <div className='flex flex-col sm:flex-row mt-10 lg:mt-0 space-y-6 sm:space-y-0 sm:space-x-6 overflow-x-auto flex-1'>
                                 <div className='relative w-full h-52 sm:h-72 lg:h-[79%]  sm:w-[50%] lg:w-[85%] rounded-xl border border-gray-100'>

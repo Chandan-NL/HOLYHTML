@@ -9,7 +9,7 @@ import Form from './Form';
 
 const Contact = () => {
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
-    const urlEndpoint = `https://wa.me/6360443469?text=Hello,%20I%20am%20interested%20in%20your%20services!`
+    const urlEndpoint = `https://wa.me/6360443469?text=Hello,%20I%20am%20interested%20in%20your%20Web%20Development%20Services!`
 
     return (
         <>

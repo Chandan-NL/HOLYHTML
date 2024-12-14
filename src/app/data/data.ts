@@ -38,8 +38,8 @@ export const ProjectData = [
       "Attract clients and employers with an impressive design tailored for career growth and online presence.",
     linkTitle: "Live Preview",
     link: "https://chandan-nl.github.io/portfolio/",
-    img1: "./project1.png",
-    img2: "./project2.png",
+    img1: "https://ik.imagekit.io/p5dmneaken/project1.png",
+    img2: "https://ik.imagekit.io/p5dmneaken/project2.png",
   },
 
   {
@@ -51,8 +51,8 @@ export const ProjectData = [
       "vel accumsan mauris convallis. Sed euismod, sapien id vehicula, lacus sapien efficitur sapien.",
     linkTitle: "Live Preview ",
     link: "/test",
-    img1: "./404.png",
-    img2: "./404.png",
+    img1: "https://ik.imagekit.io/p5dmneaken/404.png",
+    img2: "https://ik.imagekit.io/p5dmneaken/404.png",
   },
 ];
 

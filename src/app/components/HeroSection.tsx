@@ -27,9 +27,9 @@ export function HeroSection() {
 
                     <div className=" w-full relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto mb-16 px-2 md:px-8">
                         {HeroData.map((item) =>
-                            <Card>
+                            <Card key={item.id}>
                                 <CardBody>
-                                    <div key={item.id} className="grid-card flex flex-row space-x-4 items-start">
+                                    <div className="grid-card flex flex-row space-x-4 items-start">
                                         <div className="icons-container rounded-xl p-2 border-teal-500 border-2 shadow-sm bg-white"> {React.createElement(item.icon)} </div>
                                         <div className="content-container">
                                             <h2 className="font-bold text-sm text-zinc-700 tracking-wide mb-3">{item.title}</h2>

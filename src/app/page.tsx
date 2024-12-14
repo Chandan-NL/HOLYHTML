@@ -9,7 +9,7 @@ import NewSection from "./components/NewSection";
 export default function Home() {
   return (
     <>
-      <main className="bg-white antialiased px-6">
+      <main className="bg-white antialiased px-6" aria-hidden="false">
         <Header />
         <HeroSection />
         <NewSection />

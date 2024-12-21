@@ -19,7 +19,7 @@ const ProjectsSection = () => {
                 </h2>
 
                 <div>
-                    <p className='text-base text-slate-500 font-normal text-center max-w-2xl mx-auto my-4'>A look at some of the amazing websites that we've built recently.</p>
+                    <p className='text-base text-slate-500 font-normal text-center max-w-2xl mx-auto my-4'>A look at some of the amazing websites that we&apos;ve built recently.</p>
                 </div>
 
                 <div className='relative z-10'>

@@ -61,6 +61,7 @@ export default function App() {
           icon: "error",
         });
       }
+      // @typescript-eslint/no-unused-vars
     } catch (error) {
       Swal.fire({
         title: "Error",

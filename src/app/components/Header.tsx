@@ -109,7 +109,7 @@ export default function Header() {
 
             <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
                 <ModalContent>
-                    {(onClose) => (
+                    {() => (
                         <>
                             <ModalHeader className="flex flex-col gap-1">Contact Us 📧</ModalHeader>
                             <ModalBody>

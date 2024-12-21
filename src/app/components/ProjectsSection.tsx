@@ -1,3 +1,4 @@
+// @next/next/no-img-element
 import React from 'react'
 import { ProjectData } from "@/app/data/data"
 

@@ -61,8 +61,7 @@ export default function App() {
           icon: "error",
         });
       }
-      // @typescript-eslint/no-unused-vars
-    } catch (error) {
+    } catch {
       Swal.fire({
         title: "Error",
         text: "Unable to submit your form. Please try again later.",

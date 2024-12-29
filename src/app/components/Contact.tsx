@@ -9,8 +9,10 @@ import { AnimatedTooltipPreview } from './AnimatedTooltipPreview';
 
 const Contact = () => {
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
-    const urlEndpoint = `https://wa.me/6360443469?text=Hello,%20I%20am%20interested%20in%20your%20Web%20Development%20Services!`
-
+    const msg = `Hello, I am interested in your Web Development Services!`;
+    const encodedMessage = encodeURIComponent(msg);
+    const number = `6360443469`;
+    const urlEndpoint = `https://wa.me/${number}?text=${encodedMessage}`;
     return (
         <>
             <section id="contact">

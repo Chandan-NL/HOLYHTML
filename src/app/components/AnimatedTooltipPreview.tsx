@@ -18,13 +18,13 @@ const people = [
         id: 3,
         name: "Vinod Kumar",
         designation: "Web Developer",
-        image: "https://ik.imagekit.io/p5dmneaken/Team/vinod?updatedAt=1734706462445"
+        image: "https://ik.imagekit.io/p5dmneaken/Team/vinod.jpg?updatedAt=1734857494962"
     },
     {
         id: 4,
         name: "Diwakar K",
         designation: "Project Manager",
-        image: "https://ik.imagekit.io/p5dmneaken/Team/diwakar?updatedAt=1734706326320"
+        image: "https://ik.imagekit.io/p5dmneaken/Team/diwakar?updatedAt=1735459666515"
     },
     {
         id: 5,
@@ -32,12 +32,7 @@ const people = [
         designation: "React Developer",
         image: "https://ik.imagekit.io/p5dmneaken/Team/anand.jpg"
     },
-    {
-        id: 6,
-        name: "Dora",
-        designation: "The Explorer",
-        image: "https://ik.imagekit.io/p5dmneaken/Team/dora.jpg"
-    },
+
 ];
 
 export function AnimatedTooltipPreview() {

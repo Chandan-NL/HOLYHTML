@@ -24,9 +24,9 @@ export default function App() {
       newErrors.name = "Nice try! Choose a different username";
     }
 
-    if (object.terms !== "on") {
-      newErrors.terms = "Please accept the terms";
-    }
+    // if (object.terms !== "on") {
+    //   newErrors.terms = "Please accept the terms";
+    // }
 
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
@@ -136,7 +136,7 @@ export default function App() {
           placeholder="Enter your description"
         />
 
-        <Checkbox
+        {/* <Checkbox
           isRequired
           classNames={{
             label: "text-small",
@@ -150,11 +150,11 @@ export default function App() {
           }
         >
           I agree to the terms and conditions
-        </Checkbox>
+        </Checkbox> */}
 
-        {errors.terms && (
+        {/* {errors.terms && (
           <span className="text-danger text-small">{errors.terms}</span>
-        )}
+        )} */}
 
         <div className="flex gap-4">
           <Button type="reset" color="danger" variant="light">

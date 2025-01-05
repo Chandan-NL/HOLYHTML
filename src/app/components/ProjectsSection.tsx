@@ -1,6 +1,7 @@
 // @next/next/no-img-element
 import React from 'react'
 import { ProjectData } from "@/app/data/data"
+import Safari from '@/components/ui/safari'
 
 
 const ProjectsSection = () => {
@@ -38,14 +39,23 @@ const ProjectsSection = () => {
                                 </div>
                             </div>
                             <div className='flex flex-col sm:flex-row mt-10 lg:mt-0 space-y-6 sm:space-y-0 sm:space-x-6 overflow-x-auto flex-1'>
-                                <div className='relative w-full h-52 sm:h-72 lg:h-[79%]  sm:w-[50%] lg:w-[85%] rounded-xl border border-gray-100'>
-                                    <img src={items.img1} alt="img" loading='lazy' decoding='async' className='transition duration-300 blur-0 object-cover object-left-top rounded-xl ' />
+                                <div className='relative w-full h-52 sm:h-72 lg:h-[79%]  sm:w-[50%] lg:w-[85%]  '>
+                                    {/* <img src={items.img1} alt="img" loading='lazy' decoding='async' className='transition duration-300 blur-0 object-cover object-left-top rounded-xl ' /> */}
+                                    <Safari
+                                        url="magicui.design"
+                                        className="size-full"
+                                        imageSrc={items.img1}
+                                    />
                                 </div>
-
                             </div>
                             <div className='flex flex-col sm:flex-row mt-10 lg:mt-0 space-y-6 sm:space-y-0 sm:space-x-6 overflow-x-auto flex-1'>
                                 <div className='relative w-full h-52 sm:h-72 lg:h-[79%]  sm:w-[50%] lg:w-[85%] rounded-xl border border-gray-100'>
-                                    <img src={items.img2} alt="img" loading='lazy' decoding='async' className='transition duration-300 blur-0 object-cover object-left-top rounded-xl ' />
+                                    {/* <img src={items.img2} alt="img" loading='lazy' decoding='async' className='transition duration-300 blur-0 object-cover object-left-top rounded-xl ' /> */}
+                                    <Safari
+                                        url="magicui.design"
+                                        className="size-full"
+                                        imageSrc={items.img2}
+                                    />
                                 </div>
                             </div>
                         </div>

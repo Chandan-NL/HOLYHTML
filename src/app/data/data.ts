@@ -31,6 +31,18 @@ export const HeroData = [
 export const ProjectData = [
   {
     id: 1,
+    title: "Advocate & Legal Consultant",
+    desc1:
+      "Developed a professional static website for N. Lakshmipathi, Advocate B.A., LL.B., showcasing his 20 years of legal expertise",
+    desc2:
+      "And services offered, creating a strong online presence for his practice.",
+    linkTitle: "Live Preview",
+    link: "https://n-lakshmipathi.netlify.app/",
+    img1: "https://ik.imagekit.io/p5dmneaken/project_snaps/adv1.png?updatedAt=1736083661459",
+    img2: "https://ik.imagekit.io/p5dmneaken/project_snaps/adv2.png?updatedAt=1736083661458",
+  },
+  {
+    id: 2,
     title: "Chandan N L | Portfolio",
     desc1:
       "Create a stunning personal portfolio to showcase your skills, completed projects, and freelancing expertise.",
@@ -41,9 +53,8 @@ export const ProjectData = [
     img1: "https://ik.imagekit.io/p5dmneaken/project1.png",
     img2: "https://ik.imagekit.io/p5dmneaken/project2.png",
   },
-
   {
-    id: 2,
+    id: 3,
     title: "Coming Soon 🔜",
     desc1:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque facilisis sapien at lorem tincidunt,",

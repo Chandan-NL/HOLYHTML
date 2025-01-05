@@ -1,5 +1,5 @@
 import React from "react";
-import { Form, Input, Checkbox, Button, Textarea } from "@nextui-org/react";
+import { Form, Input, Button, Textarea } from "@nextui-org/react";
 import Swal from "sweetalert2";
 
 export default function App() {
@@ -23,10 +23,6 @@ export default function App() {
     if (object.name === "admin") {
       newErrors.name = "Nice try! Choose a different username";
     }
-
-    // if (object.terms !== "on") {
-    //   newErrors.terms = "Please accept the terms";
-    // }
 
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
@@ -135,26 +131,6 @@ export default function App() {
           name="description"
           placeholder="Enter your description"
         />
-
-        {/* <Checkbox
-          isRequired
-          classNames={{
-            label: "text-small",
-          }}
-          isInvalid={!!errors.terms}
-          name="terms"
-          validationBehavior="aria"
-          value="on"
-          onValueChange={() =>
-            setErrors((prev) => ({ ...prev, terms: undefined }))
-          }
-        >
-          I agree to the terms and conditions
-        </Checkbox> */}
-
-        {/* {errors.terms && (
-          <span className="text-danger text-small">{errors.terms}</span>
-        )} */}
 
         <div className="flex gap-4">
           <Button type="reset" color="danger" variant="light">

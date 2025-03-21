@@ -53,18 +53,18 @@ export const ProjectData = [
     img1: "https://ik.imagekit.io/p5dmneaken/project1.png",
     img2: "https://ik.imagekit.io/p5dmneaken/project2.png",
   },
-  {
-    id: 3,
-    title: "Coming Soon 🔜",
-    desc1:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque facilisis sapien at lorem tincidunt,",
-    desc2:
-      "vel accumsan mauris convallis. Sed euismod, sapien id vehicula, lacus sapien efficitur sapien.",
-    linkTitle: "Live Preview ",
-    link: "/test",
-    img1: "https://ik.imagekit.io/p5dmneaken/404.png",
-    img2: "https://ik.imagekit.io/p5dmneaken/404.png",
-  },
+  // {
+  //   id: 3,
+  //   title: "Coming Soon 🔜",
+  //   desc1:
+  //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque facilisis sapien at lorem tincidunt,",
+  //   desc2:
+  //     "vel accumsan mauris convallis. Sed euismod, sapien id vehicula, lacus sapien efficitur sapien.",
+  //   linkTitle: "Live Preview ",
+  //   link: "/test",
+  //   img1: "https://ik.imagekit.io/p5dmneaken/404.png",
+  //   img2: "https://ik.imagekit.io/p5dmneaken/404.png",
+  // },
 ];
 
 export const CardData = [

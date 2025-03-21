@@ -5,7 +5,7 @@ import { SiWhatsapp } from "react-icons/si";
 import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, useDisclosure } from "@nextui-org/modal";
 import { Button } from '@nextui-org/react';
 import Form from './Form';
-import { AnimatedTooltipPreview } from './AnimatedTooltipPreview';
+// import { AnimatedTooltipPreview } from './AnimatedTooltipPreview';
 
 const Contact = () => {
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
@@ -35,10 +35,10 @@ const Contact = () => {
                                     </div>
                                 </a>
                             </div>
-                            <AnimatedTooltipPreview />
-                            <div className='flex items-center justify-center text-center my-8'>
+                            {/* <AnimatedTooltipPreview /> */}
+                            {/* <div className='flex items-center justify-center text-center my-8'>
                                 <p className=' text-base text-gray-300 md:text-lg tracking-wide font-light max-w-lg mx-auto"'>⚡ Our Team! ⚡</p>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
 

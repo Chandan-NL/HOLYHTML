@@ -6,7 +6,7 @@ import { CardData } from "@/app/data/data"
 const ServiceSection = () => {
     return (
         <>
-            <section id='service' className=' max-w-7xl mx-auto  antialiased py-10 md:py-20'>
+            <section id='service' className=' max-w-6xl mx-auto  antialiased py-10 md:pb-20'>
                 <h2 className='font-bold text-4xl text-center text-slate-700 capitalize'>We handle just about&nbsp;
 
                     <div className="relative mx-auto inline-block w-max [filter:drop-shadow(0px_1px_3px_rgba(27,_37,_80,_0.14))]">

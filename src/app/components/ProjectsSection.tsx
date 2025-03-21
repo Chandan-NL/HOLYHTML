@@ -7,7 +7,7 @@ import Safari from '@/components/ui/safari'
 const ProjectsSection = () => {
     return (
         <>
-            <section id='projects' className=' max-w-6xl mx-auto antialiased py-10 md:py-20'>
+            <section id='projects' className=' max-w-6xl mx-auto antialiased py-10 md:pt-20'>
                 <h2 className='font-bold text-4xl text-center text-slate-700 capitalize'>Recent&nbsp;
 
                     <div className="relative mx-auto inline-block w-max [filter:drop-shadow(0px_1px_3px_rgba(27,_37,_80,_0.14))]">
@@ -26,7 +26,7 @@ const ProjectsSection = () => {
 
                 <div className='relative z-10'>
                     {ProjectData.map((items) =>
-                        <div key={items.id} className='py-6 lg:py-10 flex flex-col lg:flex-row  my-20'>
+                        <div key={items.id} className='py-6 lg:py-10 flex flex-col lg:flex-row  my-10'>
                             <div className='pr-4'>
                                 <h1 className='font-bold text-2xl text-slate-800'>{items.title}</h1>
                                 <div className='text-sm text-slate-600 max-w-xs mt-4 leading-6'>

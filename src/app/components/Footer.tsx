@@ -11,10 +11,12 @@ const Footer = () => {
                         width: "10rem"
                     }} />
                 </div>
+                <div className='flex'>
                 <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2024 HOLYHTML — Developed by
-                    <a href="https://chandan-nl.github.io/portfolio/" className="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@Chandan N L</a>
-
+                    <a href="https://chandan-nl.github.io/portfolio/" className="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@Chandan N L ,</a>
                 </p>
+                <p className='mt-1'>@Varun M S</p>
+                </div>
                 <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
                     <a className="text-gray-500">
                         <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">

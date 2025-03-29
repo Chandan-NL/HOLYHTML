@@ -6,16 +6,15 @@ import Contact from "./components/Contact";
 import ProjectsSection from "./components/ProjectsSection";
 import ServiceSection from "./components/ServiceSection";
 import NewSection from "./components/NewSection";
-import FadeIn from "./components/FadeIn";
 import { motion } from "framer-motion";
+
 
 export default function Home() {
 
   return (
     <>
-      <main className="bg-white antialiased px-6 scroll-smooth" aria-hidden="false">
-
-
+      <main className="bg-white antialiased px-6 scroll-smooth" aria-hidden="false"
+      >
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -31,7 +30,7 @@ export default function Home() {
           <Footer />
         </motion.div>
 
-      </main>
+      </main >
     </>
   );
 }

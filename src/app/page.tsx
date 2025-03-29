@@ -13,9 +13,8 @@ export default function Home() {
 
   return (
     <>
-      <main className="bg-white antialiased px-6" aria-hidden="false">
+      <main className="bg-white antialiased px-6 scroll-smooth" aria-hidden="false">
 
-        <Header />
 
         <motion.div
           initial={{ opacity: 0 }}
@@ -23,31 +22,14 @@ export default function Home() {
           exit={{ opacity: 0 }}
           transition={{ duration: 1.3 }}
         >
-
-          {/* <FadeIn className="" duration={200} >
-        </FadeIn> */}
-          <FadeIn className="" duration={200} >
-            <HeroSection />
-          </FadeIn>
-
-          <FadeIn className="" duration={200} >
-            <NewSection />
-          </FadeIn>
-
-          <FadeIn className="" duration={200} >
-            <ProjectsSection />
-          </FadeIn>
-
-          <FadeIn className="" duration={200} >
-            <ServiceSection />
-          </FadeIn>
-
-          <FadeIn className="" duration={200} >
-            <Contact />
-          </FadeIn>
-
+          <Header />
+          <HeroSection />
+          <NewSection />
+          <ProjectsSection />
+          <ServiceSection />
+          <Contact />
+          <Footer />
         </motion.div>
-        <Footer />
 
       </main>
     </>
